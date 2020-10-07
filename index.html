@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulateur d'écoindex</title>
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Simulateur d'ÉcoIndex </h1>
+    <p class="subtitle">Un simulateur pour déterminer les optimisations prioritaires et des objectifs atteignables pour l'éco-conception de vos sites web.</p>
+    <p>Utilisez <a href="http://ecoindex.fr">EcoIndex.fr</a> ou l'extension navigateur GreenIT-Analysis (<a href="https://chrome.google.com/webstore/detail/greenit-analysis/mofbfhffeklkbebfclfaiifefjflcpad">Chrome</a>, <a href="https://addons.mozilla.org/fr/firefox/addon/greenit-analysis/">Firefox</a>) pour récupérer les valeurs demandées et calculer l'ÉcoIndex actuel de votre page web</p>
+  </header>
+
+  <main>
+
+    <!-- Formulaire -->
+  <section>
+    <form id="simulateur" action="" method="get">
+      <label for="DOM">Taille du DOM&nbsp;:</label>
+      <input id="DOM" type="number" value="150">
+      <label for="page">Taille de la page (kb)&nbsp;:</label>
+      <input id="page" type="number" value="700">
+      <label for="requetes">Nombre de requêtes&nbsp;:</label>
+      <input id="requetes" type="number" value="27">
+
+      <input type="submit" value="Lancer la simulation">
+    </form>
+  </section>
+
+  <!-- Résultats -->
+  <section>
+    <h2>Résultats</h2>
+
+    <p class="results">Lancez la simulation pour voir le score EcoIndex associé.</p>
+
+  </section>
+
+  </main>
+
+  <!-- Crédits -->
+  <footer>
+    <p>Ce simulateur EcoIndex vous est proposé par <a href="https://webtopie.fr">Webtopie</a></p>
+    <p>Les résultats sont caclulés à partir de l'algorithme Ecoindex disponible sur <a href="http://ecoindex.fr">EcoIndex.fr</a></p>
+    <p>Aucune donnée n'est récoltée durant l'utilisation de ce service.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,285 @@
+/* MVP.css v1.6.2 - https://github.com/andybrewer/mvp
+ * Modifié et adapté
+*/
+
+:root {
+  --color: #0ab8c7;
+  --color-accent: #0097fc4f;
+  --color-bg: #001f24;
+  --color-bg-secondary: #003139;
+  --color-secondary: #3bc47c;
+  --color-secondary-accent: #e20de94f;
+  --color-shadow: #bbbbbb20;
+  --color-text: #f7f7f7;
+  --color-text-secondary: #aaa;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --hover-brightness: 1.2;
+  --justify-important: center;
+  --justify-normal: left;
+  --line-height: 1.5;
+  --width-card: 285px;
+  --width-card-medium: 460px;
+  --width-card-wide: 800px;
+  --width-content: 1080px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Layout */
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+  padding: 1rem 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+footer,
+header,
+main {
+  margin: 0 auto;
+  max-width: var(--width-content);
+  padding: 0 1rem;
+}
+
+main {flex: 1;}
+
+footer {
+  text-align: center;
+}
+
+footer p {margin: 0;}
+
+hr {
+  background-color: var(--color-bg-secondary);
+  border: none;
+  height: 1px;
+  margin: 4rem 0;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: var(--justify-important);
+  align-items:  var(--justify-important);
+}
+
+section aside {
+  border: 1px solid var(--color-bg-secondary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow) var(--color-shadow);
+  margin: 1rem;
+  padding: 1.25rem;
+  width: var(--width-card);
+}
+
+section aside:hover {
+  box-shadow: var(--box-shadow) var(--color-bg-secondary);
+}
+
+section aside img {
+  max-width: 100%;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* Headers */
+article header,
+div header,
+main header {
+  /* padding-top: 0; */
+}
+
+header {
+  text-align: var(--justify-important);
+}
+
+header a b,
+header a em,
+header a i,
+header a strong {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+header nav img {
+  margin: 1rem 0;
+}
+
+section header {
+  padding-top: 0;
+  width: 100%;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--line-height);
+}
+
+
+ol li,
+ul li {
+  padding: 0.2rem 0;
+}
+
+p {
+  margin: 0.75rem 0;
+  padding: 0;
+}
+
+small {
+  color: var(--color-text-secondary);
+}
+
+sup {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  color: var(--color-bg);
+  font-size: xx-small;
+  font-weight: bold;
+  margin: 0.2rem;
+  padding: 0.2rem 0.3rem;
+  position: relative;
+  top: -2px;
+}
+
+/* Links */
+a {
+  color: var(--color-secondary);
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  filter: brightness(var(--hover-brightness));
+  text-decoration: underline;
+}
+
+a b,
+a em,
+a i,
+a strong,
+button {
+  border-radius: var(--border-radius);
+  display: inline-block;
+  font-size: medium;
+  font-weight: bold;
+  line-height: var(--line-height);
+  margin: 0.5rem 0;
+  padding: 1rem 2rem;
+}
+
+button {
+  font-family: var(--font-family);
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(var(--hover-brightness));
+}
+
+a b,
+a strong,
+button {
+  background-color: var(--color);
+  border: 2px solid var(--color);
+  color: var(--color-bg);
+}
+
+a em,
+a i {
+  border: 2px solid var(--color);
+  border-radius: var(--border-radius);
+  color: var(--color);
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+/* Forms */
+
+button:disabled,
+input:disabled {
+  background: var(--color-bg-secondary);
+  border-color: var(--color-bg-secondary);
+  color: var(--color-text-secondary);
+  cursor: not-allowed;
+}
+
+button[disabled]:hover {
+  filter: none;
+}
+
+form {
+  border: 1px solid var(--color-bg-secondary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow) var(--color-shadow);
+  display: block;
+  max-width: var(--width-card-wide);
+  min-width: var(--width-card);
+  padding: 1.5rem;
+  text-align: var(--justify-normal);
+  background-color: var(--color-bg-secondary);
+}
+
+form header {
+  margin: 1.5rem 0;
+  padding: 1.5rem 0;
+}
+
+input,
+label,
+select,
+textarea {
+  display: block;
+  font-size: inherit;
+  max-width: var(--width-card-wide);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+}
+
+input[type="checkbox"]+label,
+input[type="radio"]+label {
+  display: inline-block;
+  font-weight: normal;
+  position: relative;
+  top: 1px;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid var(--color-bg-secondary);
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.8rem;
+}
+
+input[readonly],
+textarea[readonly] {
+  background-color: var(--color-bg-secondary);
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
