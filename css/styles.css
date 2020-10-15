@@ -40,12 +40,12 @@ body {
 footer,
 header,
 main {
-  margin: 4rem auto;
+  margin: 3rem auto;
   max-width: var(--width-content);
   width: 100%;
   padding: 0 1rem;
 }
-
+header {margin-top: 2rem;}
 main {margin-top: 0;}
 
 footer {
