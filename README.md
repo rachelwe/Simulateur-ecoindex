@@ -14,7 +14,7 @@ Si vous souhaitez évaluer les optimisations possibles d'un projet développé o
 
 
 ## Auteur
-Ce simulateur vous est proposé par [Rachel Pellin](https://prachel.fr/)
+Ce simulateur est développé et maintenu par [Rachel Pellin](https://prachel.fr/)
 
 [![Twitter](https://img.shields.io/badge/Twitter-4A4A4A?style=flat-square&logo=twitter)](https://twitter.com/r_a_chl)  [![LinkedIn](https://img.shields.io/badge/LinkedIn-4A4A4A?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/rachel-pellin/)
 
