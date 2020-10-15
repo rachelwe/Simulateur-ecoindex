@@ -21,7 +21,8 @@ let quantiles_size = [0, 1.37, 144.7, 319.53, 479.46, 631.97, 783.38, 937.91, 10
 
 
 /**
-Calcul ecoIndex based on formula from web site www.ecoindex.fr
+  * Calcul ecoIndex based on formula from web site www.ecoindex.fr
+  * the algorithm is available under a Creative Commons CC-By-NC-ND license
 **/
 function computeEcoIndex(dom,req,size)
 {
