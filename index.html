@@ -10,40 +10,42 @@
 </head>
 <body>
   <header>
-    <h1>Simulateur d'ÉcoIndex </h1>
+    <h1><span aria-hidden="true">🌱</span> Simulateur d'ÉcoIndex</h1>
     <p class="subtitle">Déterminez les optimisations prioritaires et des objectifs atteignables pour l'éco-conception de vos sites web.</p>
     <p>Utilisez <a href="http://ecoindex.fr">EcoIndex.fr</a> ou l'extension navigateur GreenIT-Analysis (<a href="https://chrome.google.com/webstore/detail/greenit-analysis/mofbfhffeklkbebfclfaiifefjflcpad">Chrome</a>, <a href="https://addons.mozilla.org/fr/firefox/addon/greenit-analysis/">Firefox</a>) pour récupérer les valeurs demandées et calculer l'ÉcoIndex actuel de votre page web.</p>
   </header>
 
-  <main>
-
+  <main class="columns">
     <!-- Formulaire -->
-  <section>
-    <form id="simulateur" action="" method="get">
-      <label for="DOM">Taille du DOM&nbsp;:</label>
-      <input id="DOM" type="number" value="150">
-      <label for="page">Taille de la page (kb)&nbsp;:</label>
-      <input id="page" type="number" value="700">
-      <label for="requetes">Nombre de requêtes&nbsp;:</label>
-      <input id="requetes" type="number" value="27">
+    <section>
+      <h2>Simulation</h2>
+      <form id="simulateur" action="" method="get">
+        <label for="DOM">Taille du DOM *<span class="sr-only">obligatoire</span></label>
+        <input id="DOM" type="number" placeholder="150" required>
+        <label for="page">Taille de la page (kb) *<span class="sr-only">obligatoire</span></label>
+        <input id="page" type="number" placeholder="700" required>
+        <label for="requetes">Nombre de requêtes *<span class="sr-only">obligatoire</span></label>
+        <input id="requetes" type="number" placeholder="27" required>
 
-      <input type="submit" value="Lancer la simulation">
-    </form>
-  </section>
+        <input type="submit" value="Lancer la simulation">
+      </form>
+    </section>
 
-  <!-- Résultats -->
-  <section>
-    <h2>Résultats</h2>
+    <!-- Résultats -->
+    <section>
+      <h2>Résultats</h2>
 
-    <p class="results">Lancez la simulation pour voir le score EcoIndex associé.</p>
+      <p>Lancez la simulation pour voir le score EcoIndex associé.</p>
 
-  </section>
+      <p class="results"></p>
+
+    </section>
 
   </main>
 
   <!-- Crédits -->
   <footer>
-    <p>Ce simulateur EcoIndex vous est proposé par <a href="https://webtopie.fr">Webtopie</a></p>
+    <p>Ce simulateur est développé et maintenu avec 💚 par <a href="https://prachel.fr">Rachel Pellin</a></p>
     <p>Les résultats sont caclulés à partir de l'algorithme Ecoindex disponible sur <a href="http://ecoindex.fr">EcoIndex.fr</a> et mis à disposition sous les termes de la <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/fr/">licence Creative Commons CC-By-NC-ND</a></p>
     <p>Aucune donnée n'est récoltée durant l'utilisation de ce service.</p>
   </footer>

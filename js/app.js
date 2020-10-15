@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function showEcoIndex() {
     const ecoIndex = computeEcoIndex(DOM.value, requetes.value, page.value);
 
-    results.innerHTML = "Votre score EcoIndex serait de <span class=\"score\">" + ecoIndex + "</span> pour une note de <span class=\"note\">" + getEcoIndexGrade(ecoIndex) + "</span>"
+    results.innerHTML = "Votre score EcoIndex est estimé à&nbsp;:<p class=\"results_grade\"><span class=\"score\">" + ecoIndex + "</span> / <span class=\"note\">" + getEcoIndexGrade(ecoIndex) + "</span></p>"
 
     results.setAttribute('data-type', getEcoIndexGrade(ecoIndex));
   }
