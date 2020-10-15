@@ -2,6 +2,8 @@
 
 Ce simulateur d'EcoIndex a été conçu pour vous permettre de déterminer les optimisations prioritaires et des objectifs atteignables pour l'éco-conception de vos sites web.
 
+Le simulateur est disponible ici : [Simulateur d'EcoIndex 🌱](rachelwe.github.io/simulateur-ecoindex/)
+
 ## Usage
 
 Si vous souhaitez simplement mieux comprendre l'algorithme EcoIndex, il vous suffit de renseigner les différentes valeurs et de soumettre le formulaire pour voir le score et la note associée.
