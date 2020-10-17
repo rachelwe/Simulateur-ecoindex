@@ -20,11 +20,11 @@
     <section>
       <h2>Simulation</h2>
       <form id="simulateur" action="" method="get">
-        <label for="DOM">Taille du DOM *<span class="sr-only">obligatoire</span></label>
+        <label for="DOM">Taille du DOM <abbr title="obligatoire">*</abbr></label>
         <input id="DOM" type="number" placeholder="150" required>
-        <label for="page">Taille de la page (kb) *<span class="sr-only">obligatoire</span></label>
+        <label for="page">Taille de la page (kb) <abbr title="obligatoire">*</abbr></label>
         <input id="page" type="number" placeholder="700" required>
-        <label for="requetes">Nombre de requêtes *<span class="sr-only">obligatoire</span></label>
+        <label for="requetes">Nombre de requêtes <abbr title="obligatoire">*</abbr></label>
         <input id="requetes" type="number" placeholder="27" required>
 
         <input type="submit" value="Lancer la simulation">
@@ -37,7 +37,7 @@
 
       <p>Lancez la simulation pour voir le score EcoIndex associé.</p>
 
-      <p class="results"></p>
+      <p class="results" aria-live="polite"></p>
 
     </section>
 

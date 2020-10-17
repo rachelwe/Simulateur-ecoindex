@@ -161,15 +161,11 @@ label {
   margin-bottom: 0.2rem;
 }
 
-/* Accessibility */
-.sr-only {
-  position: absolute !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
+/* style de l'astérisque obligatoire */
+label abbr {
+  color: tomato;
+  font-size: 0.8rem;
+  vertical-align: top;
 }
 
 
