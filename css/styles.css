@@ -1,16 +1,13 @@
 /* MVP.css v1.6.2 - https://github.com/andybrewer/mvp
- * Modifié et adapté
-*/
+ * Unused selectors & properties removed, modified & enhanced.
+ */
 
 :root {
   --color: #0ab8c7;
-  --color-accent: #0097fc4f;
   --color-bg: #001f24;
   --color-bg-secondary: #003139;
   --color-secondary: #3bc47c;
-  --color-shadow: #bbbbbb20;
   --color-text: #f7f7f7;
-  --color-text-secondary: #aaa;
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --hover-brightness: 1.2;
   --justify-important: left;
@@ -18,13 +15,10 @@
   --line-height: 1.5;
   --width-card: 17.5rem;
   --width-card-medium: 25rem;
-  --width-card-wide: 50rem;
   --width-content: 55rem;
 }
 
-* {
-  box-sizing: border-box;
-}
+* {box-sizing: border-box;}
 
 /* Layout */
 body {
@@ -45,7 +39,9 @@ main {
   width: 100%;
   padding: 0 1rem;
 }
+
 header {margin-top: 2rem;}
+
 main {margin-top: 0;}
 
 footer {
@@ -54,13 +50,6 @@ footer {
 }
 
 footer p {margin: 0;}
-
-hr {
-  background-color: var(--color-bg-secondary);
-  border: none;
-  height: 1px;
-  margin: 4rem 0;
-}
 
 @media screen and (min-width: 40rem) {
   .columns {
@@ -102,49 +91,31 @@ a:hover {
 form {
   border: 1px solid var(--color-bg-secondary);
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow) var(--color-shadow);
   display: block;
-  max-width: var(--width-card-wide);
+  max-width: var(--width-card-medium);
   min-width: var(--width-card);
   padding: 1.5rem;
   text-align: var(--justify-normal);
   background-color: var(--color-bg-secondary);
 }
 
-form header {
-  margin: 1.5rem 0;
-  padding: 1.5rem 0;
-}
-
 input,
-label,
-select,
-textarea {
+label {
   display: block;
   font-size: inherit;
-  max-width: var(--width-card-wide);
+  max-width: var(--width-card-medium);
 }
 
-input,
-select,
-textarea {
+input {
   border: 1px solid var(--color-bg-secondary);
   border-radius: var(--border-radius);
   margin-bottom: 1rem;
   padding: 0.4rem 0.8rem;
 }
+input::placeholder {color: #767676;}
+input:focus {outline: 1px solid var(--color-secondary)}
 
-input:focus,
-select:focus,
-textarea:focus {
-  outline: 1px solid var(--color-secondary)
-}
-
-input[readonly],
-textarea[readonly] {
-  background-color: var(--color-bg-secondary);
-}
-
+/* form button */
 input[type="submit"] {
   background-color: var(--color-secondary);
   border: 2px solid var(--color-secondary);
@@ -152,16 +123,15 @@ input[type="submit"] {
   font-weight: bold;
   cursor: pointer;
 }
-
 input[type="submit"]:hover {filter: brightness(var(--hover-brightness));}
 input[type="submit"]:focus {outline-color: var(--color-text);}
 
+/* label */
 label {
   font-weight: bold;
   margin-bottom: 0.2rem;
 }
-
-/* style de l'astérisque obligatoire */
+/* required star style */
 label abbr {
   color: tomato;
   font-size: 0.8rem;
@@ -171,8 +141,7 @@ label abbr {
 
 /* Results */
 .results {
-  /* Dynamic value */
-  --color-score: #349A47;
+  --color-score: #349A47; /* Dynamic value */
 }
 .results_grade {
   font-size: 2.3rem;
@@ -195,7 +164,7 @@ label abbr {
   height: 1.5em;
 }
 
-/* Grade colors, A is default and has white letter */
+/* Grade colors, A is default and the only one with white letter */
 [data-type="A"] {--color-letter: #fff;}
 [data-type="B"] {--color-score: #51B84B;}
 [data-type="C"] {--color-score: #CADB2A;}
