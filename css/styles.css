@@ -164,6 +164,9 @@ label abbr {
   height: 1.5em;
 }
 
+/* Accessibility */
+.reader-only {display:none;}
+
 /* Grade colors, A is default and the only one with white letter */
 [data-type="A"] {--color-letter: #fff;}
 [data-type="B"] {--color-score: #51B84B;}
