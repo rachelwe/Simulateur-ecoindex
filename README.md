@@ -2,7 +2,7 @@
 
 Ce simulateur d'EcoIndex a été conçu pour vous permettre de déterminer les optimisations prioritaires et des objectifs atteignables pour l'éco-conception de vos sites web.
 
-Le simulateur est disponible ici : [Simulateur d'EcoIndex 🌱](https://rachelwe.github.io/simulateur-ecoindex/)
+Le simulateur est disponible ici : [Simulateur d'EcoIndex 🌱](https://rachelwe.github.io/Simulateur-ecoindex/)
 
 ## Usage
 
