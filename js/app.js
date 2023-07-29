@@ -47,12 +47,12 @@ return quantiles.length;
 
 function getEcoIndexGrade(ecoIndex)
 {
-if (ecoIndex > 75) return "A";
-if (ecoIndex > 65) return "B";
-if (ecoIndex > 50) return "C";
-if (ecoIndex > 35) return "D";
-if (ecoIndex > 20) return "E";
-if (ecoIndex > 5) return "F";
+if (ecoIndex > 80) return "A";
+if (ecoIndex > 70) return "B";
+if (ecoIndex > 55) return "C";
+if (ecoIndex > 40) return "D";
+if (ecoIndex > 25) return "E";
+if (ecoIndex > 10) return "F";
 return "G";
 }
 
